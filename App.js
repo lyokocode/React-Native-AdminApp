@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native';
+import Screens from './Screens';
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-blue-500">
-      <Text className="text-black">Hello World</Text>
-      <StatusBar style="auto" />
-
-    </View>
+    <SafeAreaView className="flex-1">
+      <NavigationContainer >
+        <Screens />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }
